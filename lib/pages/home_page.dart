@@ -1,6 +1,7 @@
 
 
 import 'package:chat_app_final/auth/auth_service.dart';
+import 'package:chat_app_final/components/my_drawer.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -32,6 +33,7 @@ class HomePage extends StatelessWidget {
           ),
         ],
       ),
+      drawer: MyDrawer(),
     );
   }
 }
