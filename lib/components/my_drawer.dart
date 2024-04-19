@@ -8,8 +8,8 @@ class MyDrawer extends StatelessWidget {
    void logout() {
      // Add logout logic here
 
-     final _auth = AuthService();
-     _auth.signOut();
+     final auth = AuthService();
+     auth.signOut();
    }
 
    @override

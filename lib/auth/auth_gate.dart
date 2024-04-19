@@ -19,7 +19,7 @@ class AuthGate extends StatelessWidget {
         builder: (context, snapshot){
 
           if (snapshot.hasData){
-            return const HomePage();
+            return  HomePage();
           }
 
 

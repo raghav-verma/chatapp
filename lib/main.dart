@@ -54,7 +54,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     final bool isLoggedIn = FirebaseAuth.instance.currentUser!=null;
     return MaterialApp(
-      key: _navigatorKey,
+      navigatorKey: _navigatorKey,
       title: 'Flutter Demo',
       // theme: ThemeData(
       //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
@@ -65,7 +65,7 @@ class _MyAppState extends State<MyApp> {
     routes: {
       '/loginPage': (context) =>LoginPage(),
       '/registerPage': (context) => RegisterPage(),
-      '/homePage': (context) => const HomePage(),
+      '/homePage': (context) =>  HomePage(),
     },
     //     home: AuthGate(),
 
