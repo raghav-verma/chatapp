@@ -1,5 +1,3 @@
-
-// import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class UserTile extends StatelessWidget {
@@ -7,15 +5,11 @@ class UserTile extends StatelessWidget {
   final String text;
   final void Function()? onTap;
 
-
   const UserTile({
     super.key,
     required this.text,
     required this.onTap,
   });
-
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -26,6 +20,8 @@ class UserTile extends StatelessWidget {
           color: Theme.of(context).colorScheme.secondary,
           borderRadius: BorderRadius.circular(12),
         ),
+        margin: const EdgeInsets.symmetric(vertical: 5, horizontal:  25),
+        padding :  EdgeInsets.all(20),
         child : Row(
           children: [
             //icon
